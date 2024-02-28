@@ -114,6 +114,7 @@
             android:permission="AodBrightnessService">
         </service>
 
+        <!--
         <service
             android:name=".doze.PocketService"
             android:permission="PocketService">
@@ -133,6 +134,7 @@
                 android:name="com.android.settings.summary"
                 android:resource="@string/clear_speaker_summary" />
         </activity>
+        -->
 
         <activity
             android:name=".gestures.FpDoubleTapActivity"

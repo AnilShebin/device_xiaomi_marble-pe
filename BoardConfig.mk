@@ -28,7 +28,7 @@ AB_OTA_PARTITIONS += \
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv9-a
 TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_VARIANT := cortex-a510
+TARGET_CPU_VARIANT := cortex-a76
 
 # Audio
 AUDIO_FEATURE_ENABLED_DLKM := true
@@ -112,8 +112,8 @@ BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000 \
     disable_dma32=on \
     kpti=off \
-    swinfo.fingerprint=$(BLAZE_VERSION) \
-    mtdoops.fingerprint=$(BLAZE_VERSION) \
+    swinfo.fingerprint=$(AOSP_VERSION) \
+    mtdoops.fingerprint=$(AOSP_VERSION) \
     allow_file_spec_access \
     irqaffinity=0-3 \
     pelt=8
